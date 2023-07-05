@@ -34,26 +34,46 @@ header {
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: #fff;
-    padding: 25px 75px;
+    color: #FFF;
+    padding: 25px 72px;
 }
 
 .text-center {
-    text-align: center;
+    text-align: center ;
 }
 
-.section-header {
+.section-header-style {
     font-size: 32px;
     color: #333;
     margin: 10px 0;
 }
 
-.section-text {
+.section-text-style {
     font-size: 20px;
     color: #666;
 }
 
+.section-header-second {
+    text-align: center;
+    font-size: 40px;
+    color: #3A3A3A;
+    margin: 10px 0;
+
+}
+
+.show-button {
+    display: inline-block;
+    background-color: #FFF;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #B88E2F;
+    padding: 12px 80px;
+    font-weight: 700;
+    border: 1px solid;
+}
+
 /* Header */
+
 .logo-wrap {
     display: flex;
     gap: 5px;
@@ -76,28 +96,30 @@ header {
     font-weight: 700;
 }
 
-.main-user-controls a {
+.main-user-nav a {
     text-decoration: none;
     margin-left: 45px;
 }
 
-/* END Heaser */
+/* Hero */
 
 .hero {
     background-image: url(/images/home/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 100vh;
+    margin-bottom: 60px;
 }
 
 .hero-wrap {
-    width: 1286px;
-    height: 100vh;
-    margin: 0 auto;
     display: flex;
     justify-content: end;
     align-items: center;
-    margin-bottom: 60px;
+    width: 1286px;
+    margin: 0 auto;
+    height: 100%;
+
 }
 
 .hero-content span {
@@ -108,14 +130,14 @@ header {
 .hero-content {
     display: inline-block;
     border-radius: 10px;
-    background-color: #FFF3E3;
     padding: 40px;
+    background-color: #FFF3E3;
     max-height: 350px;
 }
 
 .hero-content-header {
-    font-size: 52px;
     color: #B88E2F;
+    font-size: 52px;
     font-weight: 700;
     margin-top: 5px;
     margin-bottom: 20px;
@@ -125,9 +147,11 @@ header {
     line-height: normal;
 }
 
+/* Section on 2 page  */
+
 .main-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 60px;
 }
 
@@ -142,3 +166,106 @@ header {
 .main-card img {
     border-radius: 10px;
 }
+
+/* Section on 3 page  */
+
+.item-description {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 16px;
+    line-height: 120%;
+    background-color: #F4F5F7;
+    width: 285px;
+}
+
+.item-description p {
+    color: #898989;
+    font-size: 16px;
+}
+
+.item-description h3 {
+    color: #3A3A3A;
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.price {
+    color: #3A3A3A;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.old-price {
+    color:#B0B0B0;
+    font-size: 16px;
+    text-decoration: line-through;
+    margin-left: 16px;
+}
+
+.product-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.item-sale {
+    position: relative;
+    color: #FFFFFF;
+}
+
+.sale {
+    position: absolute;
+    left: 213px;
+    right: 24px;
+    bottom: 229px;
+    top: 24px;
+    background-image: url(/images/sale/Ellipse-red.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+}
+
+.sale-new {
+    position: absolute;
+    left: 213px;
+    right: 24px;
+    bottom: 229px;
+    top: 24px;
+    background-image: url(/images/sale/Ellipse-green.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+}
+
+.product-item {
+    position: relative;
+}
+
+.product-item:hover .cart-overlay {
+    display: block;
+    
+}
+
+.cart-overlay {
+    background-color: rgba(0, 0, 0, .7);
+    opacity: 0.7200000286102295;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: none;
+
+}
+
