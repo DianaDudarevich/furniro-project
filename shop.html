@@ -18,10 +18,10 @@
         </div>
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="#">Home</a></li>
-                <li><a class="main-nav-link" href="#">Shop</a></li>
-                <li><a class="main-nav-link" href="#">About</a></li>
-                <li><a class="main-nav-link" href="#">Contact</a></li>
+                <li><a class="main-nav-link" href="/">Home</a></li>
+                <li><a class="main-nav-link" href="/shop.html">Shop</a></li>
+                <li><a class="main-nav-link" href="/blog.html">Blog</a></li>
+                <li><a class="main-nav-link" href="/contact.html">Contact</a></li>
             </ul>
         </nav>
         <nav class="main-user-nav">
@@ -52,18 +52,26 @@
     <main>
         <div class="filter">
             <div class="container">
-                <div class="filter-user-nav">
-                    <img src="/images/second-page/filter/filtering.svg" alt="filter">
-                    <p>Filter</p>
-                    <img src="/images/second-page/filter/grid.svg" alt="grid">
-                    <img src="/images/second-page/filter/bi_view-list.svg" alt="view-list">
-                    <div class="vertical-line">
-                        <p>Showing 1–16 of 32 results</p>
+                <div class="filter-flex">
+                    <div class="filter-user-nav">
+                        <img src="/images/second-page/filter/filtering.svg" alt="filter">
+                        <p>Filter</p>
+                        <img src="/images/second-page/filter/grid.svg" alt="grid">
+                        <img src="/images/second-page/filter/bi_view-list.svg" alt="view-list">
+                        <div class="vertical-line">
+                            <p>Showing 1–16 of 32 results</p>
+                        </div>
                     </div>
-                </div>
-                <div class="filter-user-form">
-                    <span>Show</span>
-                    <span>Short by</span>
+                    <form class="filter-user-form">
+                        <div class="show-form">
+                            <label for="">Show</label>
+                            <input type="text" name="Show" id="Show-input" placeholder="16">
+                        </div>
+                        <div class="short-form">
+                            <label for="Short">Short by</label>
+                            <input type="text" name="Short" placeholder="Default">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -436,76 +444,83 @@
                     </div>
                 </div>
                 <div class="pages-nav">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>Next</button>
+                    <div class="button-hover">
+                        <a href="">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">Next</a>
+                    </div>
                 </div>
             </div>
-        </section>   
-        <div class="advantages">
-            <div class="advantages-1">
-                <img src="/images/second-page/advantages/trophy.svg" alt="trophy">
-                <div class="advantages-text">
-                    <span>High Quality</span>
-                    <p>crafted from top materials</p>
+        </section> 
+        <div class="advantages-bg">
+            <div class="advantages">
+                <div class="advantages-inf">
+                    <img src="/images/second-page/advantages/trophy.svg" alt="trophy">
+                    <div class="advantages-text">
+                        <span>High Quality</span>
+                        <p>crafted from top materials</p>
+                    </div>
+                </div>
+                <div class="advantages-inf">
+                    <img src="/images/second-page/advantages/guarantee.svg" alt="guarantee">
+                    <div class="advantages-text">
+                        <span>Warranty Protection</span>
+                        <p>Over 2 years</p>
+                    </div>
+                </div>
+                <div class="advantages-inf">
+                    <img src="/images/second-page/advantages/shipping.svg" alt="shipping">
+                    <div class="advantages-text">
+                        <span>Free Shipping</span>
+                        <p>Order over 150 $</p>
+                    </div>
+                </div>
+                <div class="advantages-inf">
+                    <img src="/images/second-page/advantages/customer-support.svg" alt="support">
+                    <div class="advantages-text">
+                        <span>24 / 7 Support</span>
+                        <p>Dedicated support</p>
+                    </div>
                 </div>
             </div>
-            <div class="advantages-2">
-                <img src="/images/second-page/advantages/guarantee.svg" alt="guarantee">
-                <div class="advantages-text">
-                    <span>Warranty Protection</span>
-                    <p>Over 2 years</p>
-                </div>
-            </div>
-            <div class="advantages-3">
-                <img src="/images/second-page/advantages/shipping.svg" alt="shipping">
-                <div class="advantages-text">
-                    <span>Free Shipping</span>
-                    <p>Order over 150 $</p>
-                </div>
-            </div>
-            <div class="advantages-4">
-                <img src="/images/second-page/advantages/customer-support.svg" alt="support">
-                <div class="advantages-text">
-                    <span>24 / 7 Support</span>
-                    <p>Dedicated support</p>
-                </div>
-            </div>
-        </div>
+        </div>  
     </main>
     <footer>
         <div class="footer-wrap">
             <div class="footer-wrap-content">
-                <div class="footer-content-1">
+                <div class="footer-content">
                     <h4>Furniro.</h4>
-                    <p>400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+                    <p>400 University Drive Suite 200 Coral <br> Gables, <br> FL 33134 USA</p>
                 </div>
-                <div class="footer-content-2">
+                <div class="footer-content">
+                    <p class="footer-nav-names">Links</p>
                     <div class="footer-links">
-                        <span class="footer-nav-names">Links</span>
-                        <a href="">Home</a>
-                        <a href="">Shop</a>
-                        <a href="">About</a>
-                        <a href="">Contact</a>
+                        <a href="/">Home</a>
+                        <a href="/shop.html">Shop</a>
+                        <a href="/blog.html">Blog</a>
+                        <a href="/contact.html">Contact</a>
                     </div>
                 </div>
-                <div class="footer-content-3">
+                <div class="footer-content">
+                    <p class="footer-nav-names">Help</p>
                     <div class="footer-links">
-                        <span class="footer-nav-names">Help</span>
                         <a href="">Payment Options</a>
                         <a href="">Returns</a>
                         <a href="">Privacy Policies</a>
                     </div>
                 </div>
-                <div class="footer-content-4">
-                    <span class="footer-nav-names">Newsletter</span>
-                    <hr class="horizontal-line">
+                <div class="footer-content">
+                    <p class="footer-nav-names">Newsletter</p>
+                    <form id="news-form">
+                        <input type="email" name="news-form-email" placeholder="Enter Your Email Address">
+                        <button type="submit">subscibe</button>
+                    </form>
                 </div>
-                <div class="footer-wrap-2">
-                    <hr class="horizontal-line-long">
-                    <p>2023 furino. All rights reverved</p>
-                </div>
+            </div>
+            <div class="footer-wrap-2">
+                <hr class="horizontal-line-long" color="#D9D9D9"> 
+                <p>2023 furino. All rights reverved</p>
             </div>
         </div>
     </footer>
